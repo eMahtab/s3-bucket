@@ -1,0 +1,174 @@
+<html>
+
+    <head>
+        <title>Flip-Flop</title>
+        
+       <style type="text/css">
+           
+           
+       a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}     
+.flipcard {
+  position: relative;
+  width: 100px;
+  height: 500px;
+  /*margin:10px 5px;*/
+  margin-left: 1px;    
+  perspective: 500px;
+  float:left;
+}
+.flipcard.v:hover .front, .flipcard.v.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard.v:hover .back, .flipcard.v.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard.v .back{
+  transform: rotateY(-180deg);
+}
+
+.front, .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  
+  transition: all 1.5s ease-in;  
+  backface-visibility: hidden;
+}
+.back{
+  text-align: center;
+  color: white; 
+  padding: 10px;  
+ 
+}
+.flipcard img
+{
+  width:100%;
+  height:100%;
+}
+          .center {                
+    padding-top: 30px;
+}       
+        </style>
+    
+    </head>            
+
+    <body> 
+        <h3 align="center"><a href="vertical.html">Vertical Flip</a></h3>
+        <div style="padding-left:170px">
+          <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img0.jpg">
+                </div>    
+               <div class="back">	               
+                    <img src="khamenei/img0.jpg"> 
+               </div>
+          </div>
+        
+          <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img1.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img1.jpg"> 
+               </div>
+          </div>
+        
+         <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img2.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img2.jpg"> 
+               </div>
+          </div>
+        
+        <div onmouseover="flipIt();"  class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img3.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img3.jpg"> 
+               </div>
+          </div>
+        
+         <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img4.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img4.jpg"> 
+               </div>
+          </div>
+        
+        <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img5.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img5.jpg"> 
+               </div>
+          </div>
+        
+         <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img6.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img6.jpg"> 
+               </div>
+          </div>
+        
+        <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img7.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img7.jpg"> 
+               </div>
+          </div>
+        
+         <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img8.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img8.jpg"> 
+               </div>
+          </div>
+        
+        <div onmouseover="flipIt();" class="flipcard v center">
+               <div class="front">                  
+                   <img  src="sting/img9.jpg">
+                </div>    
+               <div class="back">	               
+                    <img  src="khamenei/img9.jpg"> 
+               </div>
+          </div>
+     
+            </div>
+        
+        
+        
+          <script type="text/javascript">
+        function flipIt(){
+  /*document.querySelector('#card').classList.toggle('flip');*/
+           /* alert("Flipit is called");*/
+            var cards=document.querySelectorAll('.flipcard'); 
+            for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+    card.classList.toggle('flip');
+}
+            
+}
+        //flipIt();
+        </script>
+        
+    </body>
+    
+    
+
+</html>

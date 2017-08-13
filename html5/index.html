@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drink Mate</title>  
+   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+<div class="content">
+  <h1 class="content__heading">Your Drink Mate</h1>
+  <p class="content__teaser">We believe that a drink should never be taken casually and you should always make the most out of it</p>
+  <a href="beers.html" class="content__cta">Check our store!</a>
+</div><!-- /content -->
+
+<video id="my-video" class="video"  loop muted>
+     <source src="video/demo.mp4" type="video/mp4">
+     <source src="video/demo.webm" type="video/webm">
+</video>
+
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+</body>
+</html>
